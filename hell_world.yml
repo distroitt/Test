@@ -1,7 +1,7 @@
 ---
 - name: Update web servers
   hosts: all
-  remote_user: root
+  become: true
   
   tasks:
   - name: Goida
