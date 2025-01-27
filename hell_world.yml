@@ -2,7 +2,7 @@
 - name: Update web servers
   hosts: all
   become: yes
-  
+  ansible_become_password: 486250
   tasks:
   - name: Goida
     ansible.builtin.apt:
