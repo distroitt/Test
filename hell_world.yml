@@ -1,6 +1,7 @@
 ---
 - name: Update web servers
   hosts: all
+  become: yes
   
   tasks:
   - name: Goida
