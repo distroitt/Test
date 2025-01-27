@@ -1,7 +1,11 @@
-- name: Hello World Sample
+---
+- name: Update web servers
   hosts: all
+
   tasks:
-    - name: Hello Message
-      ansible.builtin.apt::
-        name: make=4.0
-        state: present
+  - name: Goida
+    ansible.builtin.yum:
+      name: make
+      state: present
+
+
