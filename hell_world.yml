@@ -2,7 +2,8 @@
 - name: Update web servers
   hosts: all
   become: yes
-  
+  vars_files:
+    - vars.yml
   tasks:
   - name: Goida
     ansible.builtin.apt:
