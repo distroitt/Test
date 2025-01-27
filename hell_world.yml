@@ -10,6 +10,6 @@
       name: make
       state: present
   - name: Выключить хост с предупреждением
-    command: shutdown -h +1 "Система будет выключена через скоро."
+    command: shutdown now
 
 
