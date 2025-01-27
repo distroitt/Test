@@ -1,11 +1,10 @@
 ---
 - name: Update web servers
   hosts: all
-  become: true
   
   tasks:
   - name: Goida
-    ansible.builtin.yum:
+    ansible.builtin.apt:
       name: make
       state: present
 
