@@ -4,3 +4,6 @@
   tasks:
     - name: Open Notepad
       win_command: notepad.exe
+      ansible_connection: winrm
+      ansible_winrm_transport: ntlm
+      ansible_winrm_server_cert_validation: ignore
