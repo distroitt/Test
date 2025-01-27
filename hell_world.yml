@@ -1,10 +1,5 @@
 ---
-- name: Open application on Windows
-  hosts: all
-  tasks:
-    - name: Open Notepad
-      win_command: notepad.exe
-      vars:
-        ansible_connection: winrm
-        ansible_winrm_transport: ntlm
-        ansible_winrm_server_cert_validation: ignore
+- name: Install make tools on Ubuntu
+  ansible.builtin.apt:
+    name: make=4.0
+    state: present
