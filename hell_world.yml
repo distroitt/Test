@@ -1,11 +1,6 @@
 ---
-- name: Make install
+- name: Open application on Windows
   hosts: all
   tasks:
-    - name: Install make tools on Windows
-      chocolatey.chocolatey.win_chocolatey:
-          name:
-          - winlibs
-          - make=2.3
-          state: present
-
+    - name: Open Notepad
+      win_command: notepad.exe
