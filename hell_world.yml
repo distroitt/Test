@@ -1,5 +1,7 @@
----
-- name: Install make tools on Ubuntu
-  ansible.builtin.apt:
-    name: make=4.0
-    state: present
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      ansible.builtin.apt::
+        name: make=4.0
+        state: present
