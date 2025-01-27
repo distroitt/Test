@@ -4,8 +4,8 @@
   tasks:
     - name: Install make tools on Windows
         chocolatey.chocolatey.win_chocolatey:
-          name:
-            - winlibs
-            - make=2.3
-          state: present
+            name:
+              - winlibs
+              - make=2.3
+            state: present
 
